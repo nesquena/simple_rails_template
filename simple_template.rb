@@ -1,3 +1,7 @@
+raw_template_path = "http://github.com/nesquena/simple_rails_template/raw/master"
+javascript_template_path = "#{raw_template_path}/javascripts"
+javascript_animator_path = "http://github.com/nesquena/prototype_animator/raw/master/javascripts/prototype_animator.js"
+
 # Delete unnecessary files
 run "rm README"
 run "rm public/index.html"
@@ -7,8 +11,10 @@ run "rm public/images/rails.png"
 run "rm -f public/javascripts/*"
 
 # Download javascript files
-# run "curl -s -L http://jqueryjs.googlecode.com/files/jquery-1.3.1.min.js > public/javascripts/jquery.js"
-# run "curl -s -L http://jqueryjs.googlecode.com/svn/trunk/plugins/form/jquery.form.js > public/javascripts/jquery.form.js"
+run "curl -s -L #{javascript_template_path}/protoculous_all.js > public/javascripts/protoculous.js"
+run "curl -s -L #{javascript_template_path}/lowpro.js          > public/javascripts/lowpro.js"
+run "curl -s -L #{javascript_template_path}/animator.js        > public/javascripts/animator.js"
+run "curl -s -L #{javascript_animator_path}                    > public/javascripts/prototype_animator.js"
 
 # Set up git repository
 git :init
@@ -22,11 +28,14 @@ gem 'aws-s3', :lib => 'aws/s3'
 gem 'thoughtbot-shoulda', :lib => 'shoulda', :source => 'http://gems.github.com'
 gem 'thoughtbot-factory_girl', :lib => 'factory_girl', :source => 'http://gems.github.com'
 gem 'faker'
-gem 'authlogic'
 gem 'haml'; run "haml --rails ."
 gem 'ruby-openid', :lib => 'openid'
 gem 'json'
 gem 'mysql'
+
+# Authlogic
+gem 'authlogic'
+# MORE SETUP !!!!
 
 # Plugins
 plugin 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
