@@ -12,9 +12,9 @@ run "rm -f public/javascripts/*"
 
 # Download javascript files
 run "curl -s -L #{javascript_template_path}/protoculous_all.js > public/javascripts/protoculous.js"
-run "curl -s -L #{javascript_template_path}/lowpro.js          > public/javascripts/lowpro.js"
-run "curl -s -L #{javascript_template_path}/animator.js        > public/javascripts/animator.js"
-run "curl -s -L #{javascript_animator_path}                    > public/javascripts/prototype_animator.js"
+run "curl -s -L #{javascript_template_path}/lowpro.js > public/javascripts/lowpro.js"
+run "curl -s -L #{javascript_template_path}/animator.js > public/javascripts/animator.js"
+run "curl -s -L #{javascript_animator_path} > public/javascripts/prototype_animator.js"
 
 # Set up git repository
 git :init
