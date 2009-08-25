@@ -2,6 +2,7 @@ Add a default layout in haml and a default shared/* partials
 Add script/plugin install git://github.com/evilchelu/asset_auto_include.git (add to layout)
   + <%= asset_auto_include_tags :javascript %>
   + <%= asset_auto_include_tags :stylesheet %>
-Add the authlogic basic tutorial
+Add the authlogic basic tutorial controller, models, views
 Add field proc changing errors to span
 Add missing database indices rake task
+Add http://github.com/internuity/quick_scopes/tree/master
