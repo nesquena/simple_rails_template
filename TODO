@@ -1,3 +1,4 @@
+Add a css reset and a layout.sass file to the public/stylesheets/sass folder
 Add a default layout in haml and a default shared/* partials
 Add script/plugin install git://github.com/evilchelu/asset_auto_include.git (add to layout)
   + <%= asset_auto_include_tags :javascript %>
@@ -6,3 +7,6 @@ Add the authlogic basic tutorial controller, models, views
 Add field proc changing errors to span
 Add missing database indices rake task
 Add http://github.com/internuity/quick_scopes/tree/master
+Add http://github.com/matthuhiggins/foreigner
+Add http://github.com/flyerhzm/bullet
+Add http://github.com/brynary/rack-bug
