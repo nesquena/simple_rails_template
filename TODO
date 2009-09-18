@@ -1,4 +1,9 @@
 Add a css reset and a layout.sass file to the public/stylesheets/sass folder
+Install ie7.js file http://dean.edwards.name/weblog/2008/01/ie7-2/ 
+Add a separate ie6.css conditionally
+  <!--[if lte IE 6]>
+    <link type="text/css" rel="stylesheet" href="css/ie6.css" />
+  <![endif]--> 
 Add a default layout in haml and a default shared/* partials
 Add script/plugin install git://github.com/evilchelu/asset_auto_include.git (add to layout)
   + <%= asset_auto_include_tags :javascript %>
@@ -6,6 +11,14 @@ Add script/plugin install git://github.com/evilchelu/asset_auto_include.git (add
 Add the authlogic basic tutorial controller, models, views
 Add field proc changing errors to span
 Add missing database indices rake task
+
+Add mocha for mocking in tests
+Add http://github.com/maxim/shmacros/ for tests
+Add http://github.com/defunkt/fakefs (figure out how to with rip)
+Add http://github.com/mislav/will_paginate
+Add http://github.com/thoughtbot/paperclip/tree/master (as GEM, remove plugin)
+Add http://github.com/justinfrench/formtastic
+Add http://github.com/josevalim/inherited_resources
 Add http://github.com/internuity/quick_scopes/tree/master
 Add http://github.com/matthuhiggins/foreigner
 Add http://github.com/flyerhzm/bullet
