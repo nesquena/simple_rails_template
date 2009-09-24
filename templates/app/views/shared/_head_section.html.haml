@@ -1,0 +1,7 @@
+- bundle do
+  = javascript_include_tag "protopak", "lowpro", "cookie-helper", "application"
+  = stylesheet_link_tag :all
+= include_ie_hacks
+= javascript_auto_include_tags
+= stylesheet_auto_include_tags
+= yield :include

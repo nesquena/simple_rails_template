@@ -1,0 +1,8 @@
+- semantic_form_for @user do |f|
+  - f.inputs do
+    = f.input :login
+    = f.input :email
+    = f.input :password, :label => f.object.new_record? ? nil : "Change password"
+    = f.input :password_confirmation, :label => "Confirm"
+  - f.buttons do
+    = f.commit_button(f.object.new_record? ? "Register" : "Update")

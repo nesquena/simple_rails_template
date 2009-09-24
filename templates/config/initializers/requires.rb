@@ -1,0 +1,1 @@
+Dir.glob("lib/extensions/*").each { |file| require file }

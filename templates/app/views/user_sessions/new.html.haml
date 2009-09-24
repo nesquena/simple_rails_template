@@ -1,0 +1,12 @@
+- title :login
+%h1 Login
+ 
+- semantic_form_for @user_session, :url => user_session_path do |f|
+  - f.inputs do
+    = f.input :login
+    = f.input :password
+    = f.input :remember_me, :as => 'boolean'
+  - f.buttons do
+    = f.commit_button "Login"
+    = link_to "Register", new_user_path
+

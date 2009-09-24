@@ -1,0 +1,13 @@
+if you ran db:migrate you now have an auto generated user
+  login: demo
+  password: demo
+
+add rack-bug bookmarklet
+ open http://RAILS_APP/__rack_bug__/bookmarklet.html
+
+run daemon script
+  ruby vendor/plugins/smart_passenger_engine_reload/lib/smart_reloader.rb
+  
+renames
+  COMPANY => helpers/site_helper and in views/shared/footer.html.haml
+  

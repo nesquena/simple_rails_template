@@ -1,0 +1,32 @@
+form.formtastic
+  fieldset
+    :display block
+    ol li
+      :display block
+      :overflow hidden
+      :margin-bottom 0.5em
+      &.error input
+        :border 1px solid #CC0000
+      label
+        :width 150px
+        :margin 2px 0
+      &.boolean label
+        :padding-left 145px
+      &.string input, &.password input
+        :width 180px
+        :margin 2px 0
+        :border 1px solid black
+        :padding 1px 2px
+      &.string, &.password
+        :width 450px
+      p.inline-errors
+        :color #CC0000
+        :margin 0
+        :padding-bottom 0 !important
+        :margin-left 10px
+        :display inline-block
+      label abbr
+        :display none
+    &.buttons
+      :margin-top 5px
+      :padding-left 150px

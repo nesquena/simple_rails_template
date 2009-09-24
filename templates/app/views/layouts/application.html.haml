@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %title= @page_title
+    = render "shared/head_section"
+  %body
+    #container
+      #content
+        .flash#site-flash= flash[:message] if flash[:message]
+        = yield :layout
+      #footer= render :partial => "shared/footer"

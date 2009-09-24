@@ -1,0 +1,4 @@
+- title :account
+%h1 Account Dashboard
+%p You are now logged in as #{current_user.login}
+= link_to "Logout", user_session_path, :method => :delete
