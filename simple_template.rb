@@ -73,6 +73,7 @@ gh_gem 'thoughtbot-shoulda', :env => 'test'
 gem 'mocha', :env => 'test'
 gem 'fakefs', :env => 'test' # TODO from gemcutter ?
 gh_gem 'mynyml-phocus', :env => 'test'
+gh_gem 'timocratic-test_benchmark', :env => 'test'
 plugin 'shmacros', :git => 'git://github.com/maxim/shmacros.git'
 
 # Authlogic

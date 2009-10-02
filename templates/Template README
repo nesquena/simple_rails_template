@@ -11,3 +11,10 @@ run daemon script
 renames
   COMPANY => helpers/site_helper and in views/shared/footer.html.haml
   
+benchmark tests
+  http://railspikes.com/2009/4/3/rails-test-benchmarks
+  Gem is installed, simply do 
+    rake test BENCHMARK=true 
+  or for full benchmark
+    rake test BENCHMARK=full
+  
