@@ -49,15 +49,15 @@ gem 'ruby-openid', :lib => 'openid'
 gem 'json'
 gem 'mysql'
 gem 'faker'
-gh_gem 'thoughtbot-factory_girl'
-gh_gem 'thoughtbot-paperclip'
-gh_gem 'mislav-will_paginate'
-gh_gem 'justinfrench-formtastic'
-gh_gem 'josevalim-inherited_resources'
+cutter_gem 'factory_girl'
+cutter_gem 'paperclip'
+cutter_gem 'will_paginate'
+cutter_gem 'formtastic'
+cutter_gem 'inherited_resources'
+cutter_gem 'bullet'
+cutter_gem 'block_helpers'
 gh_gem 'internuity-quick_scopes'
 gh_gem 'matthuhiggins-foreigner'
-gh_gem 'flyerhzm-bullet'
-gh_gem 'markevans-block_helpers'
 
 # Plugins
 plugin 'hoptoad_notifier', :git => "git://github.com/thoughtbot/hoptoad_notifier.git"
@@ -65,8 +65,12 @@ plugin 'ssl_requirement', :git => 'git://github.com/rails/ssl_requirement.git'
 plugin 'asset_auto_include', :git => 'git://github.com/gabrielg/asset_auto_include.git'
 plugin 'bundle-fu', :git => 'git://github.com/timcharper/bundle-fu.git'
 plugin 'rack-bug', :git => 'git://github.com/brynary/rack-bug.git'
+plugin 'rails_indexes', :git => 'git://github.com/eladmeidar/rails_indexes.git'
 plugin 'smart_passenger_engine_reload', :git => 'git://github.com/2collegebums/smart_passenger_engine_reload.git'
 run 'cp -R vendor/plugins/smart_passenger_engine_reload/lib/ lib/reload_server'
+
+# production
+gem 'slim_scrooge', :env => 'production'
 
 # testing libraries
 gh_gem 'thoughtbot-shoulda', :env => 'test'

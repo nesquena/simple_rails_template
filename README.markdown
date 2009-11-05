@@ -42,6 +42,9 @@ General:
  * bullet
  * block_helpers
  
+Production:
+  * slim_scrooge <http://github.com/sdsykes/slim_scrooge>
+ 
 Testing:
 
  * faker
@@ -50,12 +53,13 @@ Testing:
  * fakefs
  * phocus
  * test_benchmark
- * shmacros 
+ * shmacros
 
 ### Plugins ###
 
- * hoptoad_notifier
- * ssl_requirement
+ * `hoptoad_notifier`
+ * `ssl_requirement`
  * `asset_auto_include`
- * bundle_fu
- * rack-bug
+ * `bundle_fu`
+ * `rack-bug`
+ * `rails_indexes` <http://github.com/eladmeidar/rails_indexes>
