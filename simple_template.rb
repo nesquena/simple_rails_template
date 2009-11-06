@@ -49,13 +49,13 @@ gem 'ruby-openid', :lib => 'openid'
 gem 'json'
 gem 'mysql'
 gem 'faker'
-cutter_gem 'factory_girl'
-cutter_gem 'paperclip'
-cutter_gem 'will_paginate'
-cutter_gem 'formtastic'
-cutter_gem 'inherited_resources'
-cutter_gem 'bullet'
-cutter_gem 'block_helpers'
+gem 'factory_girl', :source => 'http://gemcutter.org'
+gem 'paperclip', :source => 'http://gemcutter.org'
+gem 'will_paginate', :source => 'http://gemcutter.org'
+gem 'formtastic', :source => 'http://gemcutter.org'
+gem 'inherited_resources', :source => 'http://gemcutter.org'
+gem 'bullet', :source => 'http://gemcutter.org'
+gem 'block_helpers', :source => 'http://gemcutter.org'
 gh_gem 'internuity-quick_scopes'
 gh_gem 'matthuhiggins-foreigner'
 
@@ -70,14 +70,14 @@ plugin 'smart_passenger_engine_reload', :git => 'git://github.com/2collegebums/s
 run 'cp -R vendor/plugins/smart_passenger_engine_reload/lib/ lib/reload_server'
 
 # production
-gem 'slim_scrooge', :env => 'production'
+gem 'slim_scrooge', :env => 'production', :source => 'http://gemcutter.org'
 
 # testing libraries
-gh_gem 'thoughtbot-shoulda', :env => 'test'
+gem 'shoulda', :env => 'test', :source => 'http://gemcutter.org'
 gem 'mocha', :env => 'test'
-gem 'fakefs', :env => 'test' # TODO from gemcutter ?
-gh_gem 'mynyml-phocus', :env => 'test'
-gh_gem 'timocratic-test_benchmark', :env => 'test'
+gem 'fakefs', :env => 'test', :source => 'http://gemcutter.org'
+gem 'phocus', :env => 'test', :source => 'http://gemcutter.org'
+gem 'test_benchmark', :env => 'test', :source => 'http://gemcutter.org'
 plugin 'shmacros', :git => 'git://github.com/maxim/shmacros.git'
 
 # Authlogic
